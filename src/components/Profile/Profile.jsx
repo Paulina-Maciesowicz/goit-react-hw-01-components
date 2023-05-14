@@ -1,18 +1,15 @@
-export const Profile = ({ unreadMessages }) => {
+export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div class="profile">
       <div class="description">
-        <img
-          src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-          alt="User avatar"
-          class="avatar"
-        />
-        <p class="name">Petra Marica</p>
-        <p class="tag">@pmarica</p>
-        <p class="location">Salvador, Brasil</p>
+        <img src={avatar} alt="User avatar" class="avatar" />
+        <p class="name">username: {username}</p>
+        <p class="tag">tag: {tag}</p>
+        <p class="location">location: {location}</p>
       </div>
 
       <ul class="stats">
+        stats: {stats}
         <li>
           <span class="label">Followers</span>
           <span class="quantity">1000</span>
@@ -29,4 +26,3 @@ export const Profile = ({ unreadMessages }) => {
     </div>
   );
 };
-
