@@ -9,16 +9,17 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
       </div>
 
       <ul class="stats">
+        Stats:
         <li>
-          <span class="label">{stats.followers}</span>
+          <span class="label">followers: {stats.followers}</span>
           <span class="quantity">1000</span>
         </li>
         <li>
-          <span class="label">{stats.views}</span>
+          <span class="label">views: {stats.views}</span>
           <span class="quantity">2000</span>
         </li>
         <li>
-          <span class="label">{stats.likes}</span>
+          <span class="label">likes: {stats.likes}</span>
           <span class="quantity">3000</span>
         </li>
       </ul>
