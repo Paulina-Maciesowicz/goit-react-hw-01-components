@@ -6,7 +6,14 @@ const FriendsList = ({ friends }) => {
     <ul>
       {friends.map(friend => (
         <li>
-          {friend.avatar} {friend.name} {friend.isOnline}
+          <span class="status">{friend.isOnline}</span>
+          <img
+            class="avatar"
+            src={friend.avatar}
+            alt="User avatar"
+            width="48"
+          />
+          <p class="name">{friend.name}</p>
         </li>
       ))}
     </ul>
@@ -16,7 +23,7 @@ const FriendsList = ({ friends }) => {
 export const FriendAllList = () => {
   return (
     <div>
-      <FriendsList statistics={favouriteFriends} />
+      <FriendsList friends={favouriteFriends} />
     </div>
   );
 };
