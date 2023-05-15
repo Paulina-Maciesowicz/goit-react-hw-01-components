@@ -1,4 +1,5 @@
-import { nanoid } from 'nanoid';
+// import { nanoid } from 'nanoid';
+// import css from "TransactionHistory.module.css"
 import items from '../../transactions.json';
 const transactionHistory = items;
 

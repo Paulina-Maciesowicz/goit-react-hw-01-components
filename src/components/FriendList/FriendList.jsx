@@ -1,3 +1,4 @@
+// import css from "FriendList.module.css"
 import friends from '../../friends.json';
 const favouriteFriends = friends;
 

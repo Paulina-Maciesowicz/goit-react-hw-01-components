@@ -1,3 +1,4 @@
+// import css from "Statics.module.css"
 import data from '../../data.json';
 const favouriteStatistics = data;
 
