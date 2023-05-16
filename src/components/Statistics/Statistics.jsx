@@ -1,4 +1,5 @@
 // import css from "Statics.module.css"
+import PropTypes from 'prop-types';
 import data from '../../data.json';
 const favouriteStatistics = data;
 
@@ -24,4 +25,8 @@ export const Statistics = () => {
       <StatisticsList statistics={favouriteStatistics} />
     </div>
   );
+};
+
+StatisticsList.propTypes = {
+  statistics: PropTypes.array.isRequired,
 };

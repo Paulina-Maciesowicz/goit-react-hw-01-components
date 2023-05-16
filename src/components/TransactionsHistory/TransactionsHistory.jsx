@@ -1,9 +1,8 @@
 // import { nanoid } from 'nanoid';
 // import css from "TransactionHistory.module.css"
-import items from '../../transactions.json';
-const transactionHistory = items;
+import PropTypes from 'prop-types';
 
-const TransactionsList = ({ items }) => {
+export const TransactionsHistory = ({ items }) => {
   return (
     <ul>
       {items.map(item => (
@@ -30,15 +29,6 @@ const TransactionsList = ({ items }) => {
   );
 };
 
-export const TransactionsAllHistory = () => {
-  return (
-    <div>
-      <TransactionsList items={transactionHistory} />
-    </div>
-  );
+TransactionsHistory.propTypes = {
+  items: PropTypes.array.isRequired,
 };
-
-
-  
-
-  
