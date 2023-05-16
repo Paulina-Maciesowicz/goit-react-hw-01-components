@@ -5,7 +5,7 @@ const favouriteStatistics = data;
 
 const StatisticsList = ({ statistics }) => {
   return (
-    <ul className={css.statistics__box}>
+    <ul>
       {statistics.map(statistic => (
         <li className={css.statistics__uploads} key={statistic.id}>
           <span className={css.statistics__label}>{statistic.label}</span>
