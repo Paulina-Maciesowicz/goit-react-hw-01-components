@@ -25,6 +25,7 @@
 .information__username {
   color: #6200ea;
   font-weight: bold;
+  text-transform: uppercase;
   margin: 8px;
   font-size: 18px;
 }

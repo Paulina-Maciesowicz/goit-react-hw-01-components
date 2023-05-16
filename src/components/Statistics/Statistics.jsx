@@ -1,15 +1,17 @@
-// import css from "Statics.module.css"
+import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
 import data from '../../data.json';
 const favouriteStatistics = data;
 
 const StatisticsList = ({ statistics }) => {
   return (
-    <ul>
+    <ul className={css.statistics__box}>
       {statistics.map(statistic => (
-        <li key={statistic.id}>
-          <span class="label">{statistic.label}</span>
-          <span class="percentage">{statistic.percentage}</span>
+        <li className={css.statistics__uploads} key={statistic.id}>
+          <span className={css.statistics__label}>{statistic.label}</span>
+          <span className={css.statistics__percentage}>
+            {statistic.percentage}%
+          </span>
         </li>
       ))}
     </ul>
@@ -18,10 +20,8 @@ const StatisticsList = ({ statistics }) => {
 
 export const Statistics = () => {
   return (
-    <div>
-      <section class="statistics">
-        <h2 class="title">Upload stats</h2>
-      </section>
+    <div className={css.statistics}>
+      <h2 className={css.statistics__title}>Upload stats</h2>
       <StatisticsList statistics={favouriteStatistics} />
     </div>
   );
