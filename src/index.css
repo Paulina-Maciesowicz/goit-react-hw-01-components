@@ -1,5 +1,4 @@
 @import-normalize;
-/* bring in normalize.css styles */
 
 body {
   margin: 6;
@@ -12,7 +11,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
@@ -29,10 +27,10 @@ body {
   }
   0%,
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-1px);
   }
   50% {
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
 }
 

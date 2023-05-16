@@ -1,64 +1,69 @@
 .profile {
-  display: flex;
-  align-items: center;
-  display: grid;
-  justify-content: center;
-
-  position: relative;
+  width: 200px;
+  text-align: center;
+  padding: 8px;
+  color: #fff;
   background: rgba(255, 255, 255, 0.05);
   background: transparent;
   border-radius: 10px;
-  overflow: hidden;
   backdrop-filter: blur(15px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
-
-  text-align: center;
-  padding: 10px;
-  background: transparent;
-  color: #fff;
-  transition: 0.5s;
-
-  &__container {
-    position: relative;
-  }
-  &__picture {
-    height: 200px;
-    weight: 200px;
-  }
 }
-.information {
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  transition: 0.5s;
 
-  &__username {
-    font-size: 10px;
-  }
-  &__tag {
-    font-size: 14px;
-  }
-  &__location {
-    font-size: 14px;
-  }
+.profile__picture {
+  width: 100px;
+  height: 100px;
+}
+
+.information {
+  border: 1px solid rgba(233, 124, 227, 0.692);
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+}
+.information__username {
+  color: #6200ea;
+  font-weight: bold;
+  margin: 8px;
+  font-size: 18px;
+}
+.information__tag {
+  margin-bottom: 8px;
+  font-size: 14px;
+  text-decoration: double;
+}
+.information__location {
+  margin-bottom: 8px;
+  font-size: 14px;
 }
 
 .stats {
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  outline: none;
+  display: flex;
+  justify-items: center;
+  justify-content: space-between;
+  width: auto;
 
-  padding: 10px;
-  font-size: 14px;
-  background: transparent;
+  font-size: 12px;
   color: #fff;
 
-  &__label {
-  }
-  &__quantity {
-  }
+  border-right: 1px solid rgba(233, 124, 227, 0.692);
+  border-bottom: 1px solid rgba(233, 124, 227, 0.692);
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+.stats__elem {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  width: 6vw;
+  border-left: 1px solid rgba(233, 124, 227, 0.692);
+}
+
+.quantity { 
+font-weight: bold;
+color: #6200ea;
+margin-bottom: 4px;
 }
