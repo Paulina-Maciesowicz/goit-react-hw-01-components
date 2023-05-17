@@ -8,14 +8,16 @@ export const FriendsList = ({ friends }) => {
       <ul>
         {friends.map(friend => (
           <li className={css.friend__card} key={friend.id}>
-            <span className={css.friend__status}> {friend.isOnline}</span>
+            <span
+              className={friend.isOnline ? css.friend__true : css.friend__false}
+            ></span>
             <img
               className={css.friend__avatar}
               src={friend.avatar}
               alt="User avatar"
               width="48"
             />
-            <p className={css.friend__name}>{friend.name}</p>
+            <p >{friend.name}</p>
           </li>
         ))}
       </ul>

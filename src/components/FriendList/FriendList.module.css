@@ -1,7 +1,7 @@
 .friend {
-  /* margin-top: 20px; */
   width: 200px;
   text-align: center;
+
   padding: 8px;
   color: var(--primary-color);
   background: rgba(255, 255, 255, 0.05);
@@ -27,17 +27,22 @@
   text-transform: uppercase;
   font-size: 18px;
 }
-.friend__status {
-  color: yellowgreen;
-}
 .friend__avatar {
   margin-right: 8px;
 }
-.friend__name {
-}
 .friend__true {
-  color: yellowgreen;
+  margin-right: 8px;
+  background-color: yellowgreen;
+  width: 10px;
+  height: 10px;
+  border-radius: 1px;
+  border: 0.2px solid var(--primary-color);
 }
 .friend__false {
-  color: red;
+  margin-right: 8px;
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  border-radius: 1px;
+  border: 0.2px solid var(--primary-color);
 }
