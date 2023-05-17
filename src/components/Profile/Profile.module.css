@@ -2,7 +2,7 @@
   width: 200px;
   text-align: center;
   padding: 8px;
-  color: #fff;
+  color: var(--primary-color);
   background: rgba(255, 255, 255, 0.05);
   background: transparent;
   border-radius: 10px;
@@ -10,24 +10,28 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  margin-right: 16px;
 }
 
 .profile__picture {
+  padding-top: 24px;
+  padding-bottom: 26px;
   width: 100px;
   height: 100px;
 }
 
 .information {
+  padding: 8px;
   border: 1px solid rgba(233, 124, 227, 0.692);
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
 .information__username {
-  color: #6200ea;
+  color: var(--secondary-color);
   font-weight: bold;
   text-transform: uppercase;
   margin: 8px;
-  font-size: 18px;
+  font-size: 20px;
 }
 .information__tag {
   margin-bottom: 8px;
@@ -63,8 +67,8 @@
   border-left: 1px solid rgba(233, 124, 227, 0.692);
 }
 
-.quantity { 
-font-weight: bold;
-color: #6200ea;
-margin-bottom: 4px;
+.quantity {
+  font-weight: bold;
+  color: var(--secondary-variablecolor);
+  margin-bottom: 4px;
 }

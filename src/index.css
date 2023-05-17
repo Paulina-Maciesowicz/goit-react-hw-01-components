@@ -49,3 +49,13 @@ ul {
   list-style: none;
   text-decoration: none;
 }
+.containerApp {
+  display: inline-flex;
+}
+:root {
+  --primary-color: #fff;
+  --primary-variablecolor: #263238;
+  --secondary-color: #6200ea;
+  --secondary-variablecolor: #2f303a;
+  --background-color: rgba(233, 124, 227, 0.692);
+}

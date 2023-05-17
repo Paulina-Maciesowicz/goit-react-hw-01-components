@@ -1,25 +1,25 @@
 // import { nanoid } from 'nanoid';
-// import css from "TransactionHistory.module.css"
+import css from './TransactionsHistory.module.css';
 import PropTypes from 'prop-types';
 
 export const TransactionsHistory = ({ items }) => {
   return (
-    <ul>
+    <ul className={css.transaction__history}>
+      <thead className={css.headers}>
+        <tr>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Currency</th>
+        </tr>
+      </thead>
       {items.map(item => (
         <li key={item.id}>
-          <table class="transaction-history">
-            <thead>
+          <table>
+            <tbody className={css.info}>
               <tr>
-                <th>Type</th>
-                <th>Amount</th>
-                <th>Currency</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="type">{item.type}</td>
-                <td class="amount">{item.amount}</td>
-                <td class="currency">{item.currency}</td>
+                <td className={css.info__type}>{item.type}</td>
+                <td className={css.info__amount}>{item.amount}</td>
+                <td className={css.info__currency}>{item.currency}</td>
               </tr>
             </tbody>
           </table>

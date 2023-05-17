@@ -1,0 +1,28 @@
+.transaction__history {
+  margin-top: 20px;
+  height: auto;
+  text-align: center;
+  padding: 8px;
+  color: var(--primary-color);
+  background: rgba(255, 255, 255, 0.05);
+  background: transparent;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+.headers {
+  font-weight: bold;
+  color: var(--primary-variablecolor);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.info {
+}
+.info__type {
+}
+.info__amount {
+}
+.info__currency {
+}

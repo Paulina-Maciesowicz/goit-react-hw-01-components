@@ -3,21 +3,21 @@ import PropTypes from 'prop-types';
 import data from '../../data.json';
 const favouriteStatistics = data;
 
-// function getRandomHexColor() {
-//   return `#${Math.floor(Math.random() * 16777215)
-//     .toString(16)
-//     .padStart(6, 0)}`;
-// }
-
-// {
-//   getRandomHexColor();
-// }
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215)
+    .toString(16)
+    .padStart(6, 0)}`;
+}
 
 const StatisticsList = ({ statistics }) => {
   return (
     <ul>
       {statistics.map(statistic => (
-        <li className={css.statistics__uploads} key={statistic.id}>
+        <li
+          style={{ backgroundColor: getRandomHexColor() }}
+          className={css.statistics__uploads}
+          key={statistic.id}
+        >
           <span className={css.statistics__label}>{statistic.label}</span>
           <span className={css.statistics__percentage}>
             {statistic.percentage}%

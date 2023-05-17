@@ -1,0 +1,43 @@
+.friend {
+  /* margin-top: 20px; */
+  width: 200px;
+  text-align: center;
+  padding: 8px;
+  color: var(--primary-color);
+  background: rgba(255, 255, 255, 0.05);
+  background: transparent;
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+.friend__card {
+  display: inline-flex;
+  padding: 8px;
+  width: 6vw;
+  font-size: 12px;
+  border: 1px solid rgba(233, 124, 227, 0.692);
+  border-radius: 2px;
+  margin: 2px;
+}
+.friend__title {
+  font-weight: bold;
+  color: var(--primary-variablecolor);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+.friend__status {
+  color: yellowgreen;
+}
+.friend__avatar {
+  margin-right: 8px;
+}
+.friend__name {
+}
+.friend__true {
+  color: yellowgreen;
+}
+.friend__false {
+  color: red;
+}

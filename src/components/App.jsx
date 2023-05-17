@@ -10,15 +10,17 @@ import { TransactionsHistory } from './TransactionsHistory/TransactionsHistory';
 export const App = () => {
   return (
     <div>
-      <Profile
-        username={user.username}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
-      <Statistics stats={data} />
-      <FriendsList friends={friends} />
+      <div class="containerApp">
+        <Profile
+          username={user.username}
+          tag={user.tag}
+          location={user.location}
+          avatar={user.avatar}
+          stats={user.stats}
+        />
+        <Statistics stats={data} />
+        <FriendsList friends={friends} />
+      </div>
       <TransactionsHistory items={transactions} />
     </div>
   );

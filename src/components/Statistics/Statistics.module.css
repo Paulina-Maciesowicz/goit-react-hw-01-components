@@ -1,9 +1,8 @@
 .statistics {
-  margin-top: 20px;
   width: 200px;
   text-align: center;
   padding: 8px;
-  color: #fff;
+  color: var(--primary-color);
   background: rgba(255, 255, 255, 0.05);
   background: transparent;
   border-radius: 10px;
@@ -11,6 +10,7 @@
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-left: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+  margin-right: 16px;
 }
 
 .statistics__uploads {
@@ -25,14 +25,14 @@
 }
 .statistics__title {
   font-weight: bold;
-  color: #6200ea;
+  color: var(--primary-variablecolor);
   text-transform: uppercase;
   font-size: 18px;
 }
 .statistics__label {
-    font-size: 12px;
+  font-size: 12px;
 }
 .statistics__percentage {
-    font-size: 14px;
-    font-weight: bold;
+  font-size: 14px;
+  font-weight: bold;
 }
