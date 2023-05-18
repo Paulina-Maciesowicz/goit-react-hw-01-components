@@ -36,5 +36,5 @@ Profile.propTypes = {
     location: PropTypes.string,
     avatar: PropTypes.string,
     stats: PropTypes.objectOf(PropTypes.number),
-  }).isRequired,
+  })
 };

@@ -5,20 +5,22 @@ import css from './TransactionsHistory.module.css';
 export const TransactionsHistory = ({ items }) => {
   return (
     <ul className={css.transaction__history}>
-      <thead className={css.headers}>
-        <tr className={css.headers__container}>
-          <th className={css.headers__type}>Type</th>
-          <th className={css.headers__type}>Amount</th>
-          <th className={css.headers__type}>Currency</th>
-        </tr>
-      </thead>
+      <table>
+        <thead className={css.headers}>
+          <tr>
+            <th className={css.headers__type}>Type</th>
+            <th className={css.headers__amount}>Amount</th>
+            <th className={css.headers__currency}>Currency</th>
+          </tr>
+        </thead>
+      </table>
       {items.map(item => (
         <li key={item.id} className={css.info}>
           <table className={css.table}>
-            <tbody>
+            <tbody className={css.tr}>
               <tr>
-                <td>{item.type}</td>
-                <td>{item.amount}</td>
+                <td className={css.type}>{item.type}</td>
+                <td className={css.amount}>{item.amount}</td>
                 <td>{item.currency}</td>
               </tr>
             </tbody>

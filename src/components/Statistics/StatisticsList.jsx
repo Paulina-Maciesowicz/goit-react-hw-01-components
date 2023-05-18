@@ -28,6 +28,8 @@ export const StatisticsList = ({ statistics }) => {
 
 StatisticsList.propTypes = {
   statistics: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.number, PropTypes.string])
-  )
+    PropTypes.objectOf(
+      PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+    )
+  ),
 };

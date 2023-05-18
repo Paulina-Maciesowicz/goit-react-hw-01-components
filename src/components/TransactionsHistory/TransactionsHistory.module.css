@@ -18,27 +18,34 @@
   font-size: 18px;
 }
 .headers__type {
-  padding-left: 110px;
+  padding-left: 112px;
 }
-
+.headers__amount {
+  padding-left: 144px;
+}
+.headers__currency {
+  padding-left: 92px;
+}
 .info {
   border-bottom: 1px solid rgba(233, 124, 227, 0.692);
 }
-
 .info:nth-child(2n) {
   padding-left: auto;
-  background-color: rgba(164, 244, 255, 0.692);
+  background-color: rgba(157, 96, 255, 0.692);
   border-radius: 2px;
 }
-
-.info__amount {
-  border-left: 1px solid rgba(233, 124, 227, 0.692);
-  border-right: 1px solid rgba(233, 124, 227, 0.692);
-}
-.table {
-  display: flex;
-  justify-content: space-between;
-}
 .table td {
+  display: inline-block;
   padding: 4px 64px;
+}
+.tr {
+  width: 50px;
+}
+.type {
+  margin-left: 50px;
+  width: 50px;
+}
+.amount {
+  margin-left: 10px;
+  width: 50px;
 }
