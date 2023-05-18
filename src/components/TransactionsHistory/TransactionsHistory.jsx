@@ -1,6 +1,6 @@
 // import { nanoid } from 'nanoid';
-import css from './TransactionsHistory.module.css';
 import PropTypes from 'prop-types';
+import css from './TransactionsHistory.module.css';
 
 export const TransactionsHistory = ({ items }) => {
   return (
@@ -18,7 +18,7 @@ export const TransactionsHistory = ({ items }) => {
             <tbody>
               <tr>
                 <td>{item.type}</td>
-                <td >{item.amount}</td>
+                <td>{item.amount}</td>
                 <td>{item.currency}</td>
               </tr>
             </tbody>
@@ -30,5 +30,5 @@ export const TransactionsHistory = ({ items }) => {
 };
 
 TransactionsHistory.propTypes = {
-  items: PropTypes.array.isRequired,
+  history: PropTypes.shape({ items: PropTypes.arrayOf(PropTypes.string) }),
 };
