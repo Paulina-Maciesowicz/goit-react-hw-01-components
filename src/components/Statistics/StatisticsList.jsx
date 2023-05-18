@@ -28,6 +28,14 @@ export const StatisticsList = ({ statistics }) => {
 
 StatisticsList.propTypes = {
   statistics: PropTypes.arrayOf(
-    PropTypes.oneOfType([PropTypes.string, PropTypes.number])
-  ).isRequired,
+    PropTypes.oneOfType([PropTypes.number, PropTypes.string])
+  )
 };
+
+// StatisticsList.propTypes = {
+//   statistics: PropTypes.shape({
+//     id: PropTypes.string,
+//     labet: PropTypes.string,
+//     percentage: PropTypes.number,
+//   }),
+// };
